@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #f1f1f1;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00dbdd;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+h1 {
+    color: black;
+    font-family: calibri;
+    font-size: 300%;
+}
+
+p {
+    color: black;
+    font-family: calibri;
+    font-size: 16px;
+    margin: 50px;
+}
+
+body {
+	background-color: #eee5e5
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+    <nav>
+<p style="font-family:calibri; font-size: 18px;"><a href="truesoul2.html">About Us</a> |<a href="truesoul.html">Our Menu</a> |<a href="truesoul4.html">Where We'll Be</a></p>
+</nav> 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<center>
+<h1>Our Menu</h1>
+</center>
+<button class="accordion">Food</button>
+<div class="panel">
+  <div class="card">
+  <img src="friedchicken.png" alt="fried chicken" style="width:100%">
+  <h1>Fried Chicken</h1>
+  <p class="price">$19.99</p>
+  <p>Crispy, Tender, House-Made. Comes in 5-6 pieces.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<div class="card">
+  <img src="friedfish" alt="fried fish" style="width:100%">
+  <h1>Fried Fish</h1>
+  <p class="price">$19.99</p>
+  <p>Comes in about a small handful of nuggets.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<div class="card">
+  <img src="greens.png" alt="greens" style="width:100%">
+  <h1>Greens</h1>
+  <p class="price">$19.99</p>
+  <p>House-Made, warm, and tastes like home. Comes in a 3"x3" container.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+<br><br>
+<div class="card">
+  <img src="macandcheese.png" alt="mac and cheese" style="width:100%">
+  <h1>Mac and Cheese</h1>
+  <p class="price">$19.99</p>
+  <p>Warm, creamy, and very cheesy. Comes in a 3"x3" container.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+</div>
+
+<button class="accordion">Desserts</button>
+<div class="panel">
+  <div class="card">
+  <img src="cheesecake.png" alt="cheesecake" style="width:100%">
+  <h1>Mini Cheesecake</h1>
+  <p class="price">$19.99</p>
+  <p>Creamy, decadent, House-Made.</p>
+  <p>Comes in Chocolate, Caramel, Strawberry, or Plain.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<div class="card">
+  <img src="poundcake.png" alt="pound cake" style="width:100%">
+  <h1>Pound Cake</h1>
+  <p class="price">$19.99</p>
+  <p>Moist. Sweet. Comes in Chocolate or Strawberry.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<div class="card">
+  <img src="churro.png" alt="churro" style="width:100%">
+  <h1>Churro</h1>
+  <p class="price">$19.99</p>
+  <p></p>
+    <p>Comes in Chocolate, Caramel, Strawberry, or Plain.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+</div>
+<button class="accordion">Drinks</button>
+<div class="panel">
+ <div class="card">
+  <img src="cheesecake.png" alt="cheesecake" style="width:100%">
+  <h1>Lemonade</h1>
+  <p class="price">$19.99</p>
+  <p>Creamy, decadent, House-Made.</p>
+  <p>Comes in Mango, Pineapple, Strawberry, and Blue Rasberry.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<div class="card">
+  <img src="koolaid.png" alt="kool-aid" style="width:100%">
+  <h1>Kool-Aid</h1>
+  <p class="price">$19.99</p>
+  <p>Comes in Mango, Pineapple, Strawberry, and Blue Rasberry.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<div class="card">
+  <img src="tea.png" alt="tea" style="width:100%">
+  <h1>Iced Tea</h1>
+  <p class="price">$2.50</p>
+  <p></p>
+    <p>Comes in an 8oz cup.</p>
+  <p><button>Add to Cart!</button></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
